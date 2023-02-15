@@ -10,3 +10,8 @@ window.onscroll = function(){
   }
 }
 
+function displayFunction() {
+  const p = document.getElementById('search-bar');
+
+  p.innerHTML = `<input class="form-control me-2 search" type="search" placeholder="Search for artist, event or venue" aria-label="Search">`;
+}

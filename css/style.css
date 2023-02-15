@@ -21,6 +21,10 @@ a {
     width: 30%;
 }
 
+.icon {
+    color: rgb(255, 255, 255) !important;
+}
+
 input[type='search'] {
     background-image: url(../img/icons8-search-20.png);
     color: rgb(255, 255, 255);
@@ -96,7 +100,7 @@ input[type='search'] {
     color: rgb(255, 255, 255);
 }
 
-#display {
+#display, #display-md {
     display: none !important;
 }
 
@@ -307,17 +311,17 @@ input[type='search'] {
     }
 }
 
-@media (max-width: 769px) and (min-width: 425px)  {
-    #hide {
+@media (max-width: 769px) and (min-width: 426px)  {
+    #hide, #display {
         display: none !important;
     }
 
-    #display, #card-head #hide {
+    #display-md, #card-head #hide {
         display: block !important;        
     }
 
     #breadcrumb {
-        padding: 1rem 0.2rem 0px;            
+        margin-top: 2rem !important;           
     }
 
     #event-details .d-flex-sm,
@@ -370,7 +374,7 @@ input[type='search'] {
     }
 }
 
-@media (max-width: 1025px) and (min-width: 768px) {
+@media (max-width: 1025px) and (min-width: 769px) {
     .botn-primary {
         width: 60% !important;
     }
